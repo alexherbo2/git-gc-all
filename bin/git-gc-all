@@ -1,0 +1,9 @@
+#!/bin/sh
+
+git \
+  -c gc.reflogExpire=now \
+  -c gc.reflogExpireUnreachable=now \
+  -c gc.rerereResolved=now \
+  -c gc.rerereUnresolved=now \
+  -c gc.pruneExpire=now \
+  gc
